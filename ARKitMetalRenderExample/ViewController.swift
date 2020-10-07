@@ -33,4 +33,38 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
     }
+
+    var isRendering = false
+    
+    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        guard let frame = sceneView.session.currentFrame else {return}
+        let pixelBuffer = frame.capturedImage
+
+        if isRendering {
+            return
+        }
+        isRendering = true
+        
+        DispatchQueue.main.async(execute: {
+            let orientation = UIApplication.shared.statusBarOrientation
+            let viewportSize = self.sceneView.bounds.size
+            
+            var image = CIImage(cvPixelBuffer: pixelBuffer)
+            
+            let transform = frame.displayTransform(for: orientation, viewportSize: viewportSize).inverted()
+            image = image.transformed(by: transform)
+            
+            let context = CIContext(options:nil)
+            guard let cameraImage = context.createCGImage(image, from: image.extent) else {return}
+
+            guard let snapshotImage = self.sceneView.snapshot().cgImage else {return}
+
+            self.metalView.registerTexturesFor(cameraImage: cameraImage, snapshotImage: snapshotImage)
+            
+            self.metalView.time = Float(time)
+            
+            self.isRendering = false
+        })
+    }
+    
 }
