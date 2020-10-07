@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hqd-JV-FHx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,25 +15,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHa-78-DnN">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHa-78-DnN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </arscnView>
-                            <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="6Am-UD-ZJq" customClass="MetaOverlayView" customModule="ARKitMetalRenderExample" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </mtkView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIK-7W-pAh" userLabel="Metal View" customClass="MetalOverlayView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="6Am-UD-ZJq" secondAttribute="bottom" id="I4s-T2-KZt"/>
-                            <constraint firstItem="6Am-UD-ZJq" firstAttribute="top" secondItem="94n-km-MT9" secondAttribute="top" id="JHx-09-Usq"/>
-                            <constraint firstItem="6Am-UD-ZJq" firstAttribute="leading" secondItem="j02-xh-lml" secondAttribute="leading" id="lKp-Kn-AL9"/>
-                            <constraint firstItem="j02-xh-lml" firstAttribute="trailing" secondItem="6Am-UD-ZJq" secondAttribute="trailing" id="s9f-HN-zvV"/>
+                            <constraint firstItem="j02-xh-lml" firstAttribute="trailing" secondItem="IIK-7W-pAh" secondAttribute="trailing" id="3qa-Xb-qbf"/>
+                            <constraint firstItem="gHa-78-DnN" firstAttribute="top" secondItem="j02-xh-lml" secondAttribute="top" id="Ig9-yv-PdC"/>
+                            <constraint firstItem="IIK-7W-pAh" firstAttribute="leading" secondItem="j02-xh-lml" secondAttribute="leading" id="Mic-7v-mfy"/>
+                            <constraint firstItem="IIK-7W-pAh" firstAttribute="top" secondItem="j02-xh-lml" secondAttribute="top" id="SNB-w0-xTy"/>
+                            <constraint firstItem="gHa-78-DnN" firstAttribute="leading" secondItem="j02-xh-lml" secondAttribute="leading" id="VuL-4K-TsJ"/>
+                            <constraint firstItem="j02-xh-lml" firstAttribute="bottom" secondItem="gHa-78-DnN" secondAttribute="bottom" id="qXO-bQ-H1d"/>
+                            <constraint firstItem="j02-xh-lml" firstAttribute="trailing" secondItem="gHa-78-DnN" secondAttribute="trailing" id="qbS-a6-bgG"/>
+                            <constraint firstItem="j02-xh-lml" firstAttribute="bottom" secondItem="IIK-7W-pAh" secondAttribute="bottom" id="tVI-gQ-Qlv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j02-xh-lml"/>
                     </view>
                     <connections>
-                        <outlet property="metalView" destination="6Am-UD-ZJq" id="5J8-Ca-OrY"/>
+                        <outlet property="metalView" destination="IIK-7W-pAh" id="h2a-19-0XP"/>
                         <outlet property="sceneView" destination="gHa-78-DnN" id="uV3-br-IW5"/>
                     </connections>
                 </viewController>
