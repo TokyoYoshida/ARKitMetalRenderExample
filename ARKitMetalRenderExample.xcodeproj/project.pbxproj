@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ED5EFEA252DB05A0070538E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5EFE9252DB05A0070538E /* AppDelegate.swift */; };
+		1ED5EFEC252DB05A0070538E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5EFEB252DB05A0070538E /* ViewController.swift */; };
+		1ED5EFEE252DB05A0070538E /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5EFED252DB05A0070538E /* Experience.rcproject */; };
+		1ED5EFF1252DB05A0070538E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5EFEF252DB05A0070538E /* Main.storyboard */; };
+		1ED5EFF3252DB05B0070538E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5EFF2252DB05B0070538E /* Assets.xcassets */; };
+		1ED5EFF6252DB05B0070538E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5EFF4252DB05B0070538E /* LaunchScreen.storyboard */; };
+		1ED5F001252DB05B0070538E /* ARKitMetalRenderExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F000252DB05B0070538E /* ARKitMetalRenderExampleTests.swift */; };
+		1ED5F00C252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F00B252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ED5EFFD252DB05B0070538E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED5EFDE252DB05A0070538E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED5EFE5252DB05A0070538E;
+			remoteInfo = ARKitMetalRenderExample;
+		};
+		1ED5F008252DB05B0070538E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ED5EFDE252DB05A0070538E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED5EFE5252DB05A0070538E;
+			remoteInfo = ARKitMetalRenderExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ED5EFE6252DB05A0070538E /* ARKitMetalRenderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitMetalRenderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED5EFE9252DB05A0070538E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1ED5EFEB252DB05A0070538E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ED5EFED252DB05A0070538E /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		1ED5EFF0252DB05A0070538E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ED5EFF2252DB05B0070538E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ED5EFF5252DB05B0070538E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1ED5EFF7252DB05B0070538E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED5EFFC252DB05B0070538E /* ARKitMetalRenderExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitMetalRenderExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED5F000252DB05B0070538E /* ARKitMetalRenderExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitMetalRenderExampleTests.swift; sourceTree = "<group>"; };
+		1ED5F002252DB05B0070538E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED5F007252DB05B0070538E /* ARKitMetalRenderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitMetalRenderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED5F00B252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitMetalRenderExampleUITests.swift; sourceTree = "<group>"; };
+		1ED5F00D252DB05B0070538E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ED5EFE3252DB05A0070538E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED5EFF9252DB05B0070538E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED5F004252DB05B0070538E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ED5EFDD252DB05A0070538E = {
+			isa = PBXGroup;
+			children = (
+				1ED5EFE8252DB05A0070538E /* ARKitMetalRenderExample */,
+				1ED5EFFF252DB05B0070538E /* ARKitMetalRenderExampleTests */,
+				1ED5F00A252DB05B0070538E /* ARKitMetalRenderExampleUITests */,
+				1ED5EFE7252DB05A0070538E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ED5EFE7252DB05A0070538E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ED5EFE6252DB05A0070538E /* ARKitMetalRenderExample.app */,
+				1ED5EFFC252DB05B0070538E /* ARKitMetalRenderExampleTests.xctest */,
+				1ED5F007252DB05B0070538E /* ARKitMetalRenderExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ED5EFE8252DB05A0070538E /* ARKitMetalRenderExample */ = {
+			isa = PBXGroup;
+			children = (
+				1ED5EFE9252DB05A0070538E /* AppDelegate.swift */,
+				1ED5EFEB252DB05A0070538E /* ViewController.swift */,
+				1ED5EFED252DB05A0070538E /* Experience.rcproject */,
+				1ED5EFEF252DB05A0070538E /* Main.storyboard */,
+				1ED5EFF2252DB05B0070538E /* Assets.xcassets */,
+				1ED5EFF4252DB05B0070538E /* LaunchScreen.storyboard */,
+				1ED5EFF7252DB05B0070538E /* Info.plist */,
+			);
+			path = ARKitMetalRenderExample;
+			sourceTree = "<group>";
+		};
+		1ED5EFFF252DB05B0070538E /* ARKitMetalRenderExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				1ED5F000252DB05B0070538E /* ARKitMetalRenderExampleTests.swift */,
+				1ED5F002252DB05B0070538E /* Info.plist */,
+			);
+			path = ARKitMetalRenderExampleTests;
+			sourceTree = "<group>";
+		};
+		1ED5F00A252DB05B0070538E /* ARKitMetalRenderExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1ED5F00B252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift */,
+				1ED5F00D252DB05B0070538E /* Info.plist */,
+			);
+			path = ARKitMetalRenderExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ED5EFE5252DB05A0070538E /* ARKitMetalRenderExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED5F010252DB05B0070538E /* Build configuration list for PBXNativeTarget "ARKitMetalRenderExample" */;
+			buildPhases = (
+				1ED5EFE2252DB05A0070538E /* Sources */,
+				1ED5EFE3252DB05A0070538E /* Frameworks */,
+				1ED5EFE4252DB05A0070538E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARKitMetalRenderExample;
+			productName = ARKitMetalRenderExample;
+			productReference = 1ED5EFE6252DB05A0070538E /* ARKitMetalRenderExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ED5EFFB252DB05B0070538E /* ARKitMetalRenderExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED5F013252DB05B0070538E /* Build configuration list for PBXNativeTarget "ARKitMetalRenderExampleTests" */;
+			buildPhases = (
+				1ED5EFF8252DB05B0070538E /* Sources */,
+				1ED5EFF9252DB05B0070538E /* Frameworks */,
+				1ED5EFFA252DB05B0070538E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ED5EFFE252DB05B0070538E /* PBXTargetDependency */,
+			);
+			name = ARKitMetalRenderExampleTests;
+			productName = ARKitMetalRenderExampleTests;
+			productReference = 1ED5EFFC252DB05B0070538E /* ARKitMetalRenderExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1ED5F006252DB05B0070538E /* ARKitMetalRenderExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED5F016252DB05B0070538E /* Build configuration list for PBXNativeTarget "ARKitMetalRenderExampleUITests" */;
+			buildPhases = (
+				1ED5F003252DB05B0070538E /* Sources */,
+				1ED5F004252DB05B0070538E /* Frameworks */,
+				1ED5F005252DB05B0070538E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ED5F009252DB05B0070538E /* PBXTargetDependency */,
+			);
+			name = ARKitMetalRenderExampleUITests;
+			productName = ARKitMetalRenderExampleUITests;
+			productReference = 1ED5F007252DB05B0070538E /* ARKitMetalRenderExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ED5EFDE252DB05A0070538E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = TokyoMac;
+				TargetAttributes = {
+					1ED5EFE5252DB05A0070538E = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					1ED5EFFB252DB05B0070538E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 1ED5EFE5252DB05A0070538E;
+					};
+					1ED5F006252DB05B0070538E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 1ED5EFE5252DB05A0070538E;
+					};
+				};
+			};
+			buildConfigurationList = 1ED5EFE1252DB05A0070538E /* Build configuration list for PBXProject "ARKitMetalRenderExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ED5EFDD252DB05A0070538E;
+			productRefGroup = 1ED5EFE7252DB05A0070538E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ED5EFE5252DB05A0070538E /* ARKitMetalRenderExample */,
+				1ED5EFFB252DB05B0070538E /* ARKitMetalRenderExampleTests */,
+				1ED5F006252DB05B0070538E /* ARKitMetalRenderExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ED5EFE4252DB05A0070538E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED5EFF6252DB05B0070538E /* LaunchScreen.storyboard in Resources */,
+				1ED5EFF3252DB05B0070538E /* Assets.xcassets in Resources */,
+				1ED5EFF1252DB05A0070538E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED5EFFA252DB05B0070538E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED5F005252DB05B0070538E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ED5EFE2252DB05A0070538E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED5EFEC252DB05A0070538E /* ViewController.swift in Sources */,
+				1ED5EFEA252DB05A0070538E /* AppDelegate.swift in Sources */,
+				1ED5EFEE252DB05A0070538E /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED5EFF8252DB05B0070538E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED5F001252DB05B0070538E /* ARKitMetalRenderExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ED5F003252DB05B0070538E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED5F00C252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ED5EFFE252DB05B0070538E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ED5EFE5252DB05A0070538E /* ARKitMetalRenderExample */;
+			targetProxy = 1ED5EFFD252DB05B0070538E /* PBXContainerItemProxy */;
+		};
+		1ED5F009252DB05B0070538E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ED5EFE5252DB05A0070538E /* ARKitMetalRenderExample */;
+			targetProxy = 1ED5F008252DB05B0070538E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1ED5EFEF252DB05A0070538E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ED5EFF0252DB05A0070538E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1ED5EFF4252DB05B0070538E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ED5EFF5252DB05B0070538E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ED5F00E252DB05B0070538E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ED5F00F252DB05B0070538E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ED5F011252DB05B0070538E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P67QP7Z567;
+				INFOPLIST_FILE = ARKitMetalRenderExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ARKitMetalRenderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ED5F012252DB05B0070538E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P67QP7Z567;
+				INFOPLIST_FILE = ARKitMetalRenderExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ARKitMetalRenderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1ED5F014252DB05B0070538E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P67QP7Z567;
+				INFOPLIST_FILE = ARKitMetalRenderExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ARKitMetalRenderExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKitMetalRenderExample.app/ARKitMetalRenderExample";
+			};
+			name = Debug;
+		};
+		1ED5F015252DB05B0070538E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P67QP7Z567;
+				INFOPLIST_FILE = ARKitMetalRenderExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ARKitMetalRenderExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKitMetalRenderExample.app/ARKitMetalRenderExample";
+			};
+			name = Release;
+		};
+		1ED5F017252DB05B0070538E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P67QP7Z567;
+				INFOPLIST_FILE = ARKitMetalRenderExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ARKitMetalRenderExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARKitMetalRenderExample;
+			};
+			name = Debug;
+		};
+		1ED5F018252DB05B0070538E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P67QP7Z567;
+				INFOPLIST_FILE = ARKitMetalRenderExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ARKitMetalRenderExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARKitMetalRenderExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ED5EFE1252DB05A0070538E /* Build configuration list for PBXProject "ARKitMetalRenderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED5F00E252DB05B0070538E /* Debug */,
+				1ED5F00F252DB05B0070538E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED5F010252DB05B0070538E /* Build configuration list for PBXNativeTarget "ARKitMetalRenderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED5F011252DB05B0070538E /* Debug */,
+				1ED5F012252DB05B0070538E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED5F013252DB05B0070538E /* Build configuration list for PBXNativeTarget "ARKitMetalRenderExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED5F014252DB05B0070538E /* Debug */,
+				1ED5F015252DB05B0070538E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ED5F016252DB05B0070538E /* Build configuration list for PBXNativeTarget "ARKitMetalRenderExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ED5F017252DB05B0070538E /* Debug */,
+				1ED5F018252DB05B0070538E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ED5EFDE252DB05A0070538E /* Project object */;
+}
