@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		1ED5EFEA252DB05A0070538E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5EFE9252DB05A0070538E /* AppDelegate.swift */; };
 		1ED5EFEC252DB05A0070538E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5EFEB252DB05A0070538E /* ViewController.swift */; };
-		1ED5EFEE252DB05A0070538E /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5EFED252DB05A0070538E /* Experience.rcproject */; };
 		1ED5EFF1252DB05A0070538E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5EFEF252DB05A0070538E /* Main.storyboard */; };
 		1ED5EFF3252DB05B0070538E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5EFF2252DB05B0070538E /* Assets.xcassets */; };
 		1ED5EFF6252DB05B0070538E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5EFF4252DB05B0070538E /* LaunchScreen.storyboard */; };
 		1ED5F001252DB05B0070538E /* ARKitMetalRenderExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F000252DB05B0070538E /* ARKitMetalRenderExampleTests.swift */; };
 		1ED5F00C252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F00B252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift */; };
+		1ED5F01A252DB1D10070538E /* MetaOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F019252DB1D10070538E /* MetaOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		1ED5EFE6252DB05A0070538E /* ARKitMetalRenderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitMetalRenderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED5EFE9252DB05A0070538E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ED5EFEB252DB05A0070538E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1ED5EFED252DB05A0070538E /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		1ED5EFF0252DB05A0070538E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ED5EFF2252DB05B0070538E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ED5EFF5252DB05B0070538E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		1ED5F007252DB05B0070538E /* ARKitMetalRenderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitMetalRenderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED5F00B252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitMetalRenderExampleUITests.swift; sourceTree = "<group>"; };
 		1ED5F00D252DB05B0070538E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED5F019252DB1D10070538E /* MetaOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			children = (
 				1ED5EFE9252DB05A0070538E /* AppDelegate.swift */,
 				1ED5EFEB252DB05A0070538E /* ViewController.swift */,
-				1ED5EFED252DB05A0070538E /* Experience.rcproject */,
+				1ED5F019252DB1D10070538E /* MetaOverlayView.swift */,
 				1ED5EFEF252DB05A0070538E /* Main.storyboard */,
 				1ED5EFF2252DB05B0070538E /* Assets.xcassets */,
 				1ED5EFF4252DB05B0070538E /* LaunchScreen.storyboard */,
@@ -259,9 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED5F01A252DB1D10070538E /* MetaOverlayView.swift in Sources */,
 				1ED5EFEC252DB05A0070538E /* ViewController.swift in Sources */,
 				1ED5EFEA252DB05A0070538E /* AppDelegate.swift in Sources */,
-				1ED5EFEE252DB05A0070538E /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
