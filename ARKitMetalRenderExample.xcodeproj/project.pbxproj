@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E122AF8252E6B14000A8F81 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F01D252DC6330070538E /* Shaders.metal */; };
 		1ED5EFEA252DB05A0070538E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5EFE9252DB05A0070538E /* AppDelegate.swift */; };
 		1ED5EFEC252DB05A0070538E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5EFEB252DB05A0070538E /* ViewController.swift */; };
 		1ED5EFF1252DB05A0070538E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5EFEF252DB05A0070538E /* Main.storyboard */; };
@@ -266,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E122AF8252E6B14000A8F81 /* Shaders.metal in Sources */,
 				1ED5F01A252DB1D10070538E /* MetalOverlayView.swift in Sources */,
 				1ED5EFEC252DB05A0070538E /* ViewController.swift in Sources */,
 				1ED5EFEA252DB05A0070538E /* AppDelegate.swift in Sources */,
