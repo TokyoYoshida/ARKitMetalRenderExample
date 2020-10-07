@@ -80,7 +80,7 @@ class MetalOverlayView: MTKView, MTKViewDelegate {
         guard let library = device.makeDefaultLibrary() else {fatalError()}
         let descriptor = MTLRenderPipelineDescriptor()
         descriptor.vertexFunction = library.makeFunction(name: "vertexShader")
-        descriptor.fragmentFunction = library.makeFunction(name: "fragmentShader")
+        descriptor.fragmentFunction = library.makeFunction(name: "fragmentShader2")
         renderDescriptor = descriptor
 
         framebufferOnly = false
