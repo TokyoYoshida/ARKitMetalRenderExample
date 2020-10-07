@@ -16,6 +16,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var metalView: MetaOverlayView!
     
+    fileprivate let virtualNode = VirtualObjectNode()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -66,5 +68,44 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             self.isRendering = false
         })
     }
-    
+
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        print("\(self.classForCoder)/" + #function)
+        
+        for child in virtualNode.childNodes {
+            if let material = child.geometry?.firstMaterial {
+                material.diffuse.contents = UIColor.black
+            }
+        }
+        virtualNode.scale = SCNVector3Make(2, 2, 2)
+        
+        DispatchQueue.main.async(execute: {
+            node.addChildNode(self.virtualNode)
+        })
+    }
+
 }
+
+extension SCNNode {
+    
+    func loadDuck() {
+        guard let scene = SCNScene(named: "duck.scn", inDirectory: "models.scnassets/duck") else {fatalError()}
+        for child in scene.rootNode.childNodes {
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            addChildNode(child)
+        }
+    }
+}
+
+class VirtualObjectNode: SCNNode {
+    
+    override init() {
+        super.init()
+        loadDuck()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
