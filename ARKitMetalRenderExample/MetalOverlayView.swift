@@ -8,7 +8,7 @@
 
 import MetalKit
 
-class MetaOverlayView: MTKView, MTKViewDelegate {
+class MetalOverlayView: MTKView, MTKViewDelegate {
 
     private var commandQueue: MTLCommandQueue!
 

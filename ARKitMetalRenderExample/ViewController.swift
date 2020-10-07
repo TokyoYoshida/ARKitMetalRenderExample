@@ -14,7 +14,7 @@ import MetalKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var sceneView: ARSCNView!
-    @IBOutlet weak var metalView: MetaOverlayView!
+    @IBOutlet weak var metalView: MetalOverlayView!
     
     fileprivate let virtualNode = VirtualObjectNode()
 
