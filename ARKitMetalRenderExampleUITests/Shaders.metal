@@ -66,18 +66,30 @@ fragment float4 fragmentShader2(ColorInOut       in               [[ stage_in ]]
 
     float4 color = snapshot_texture.sample(colorSampler, in.texCoords);
     
-    if (color.r == 0.0 && color.g == 0.0 && color.b == 0.0)
-    {
-        float2 uv = in.texCoords;
-        float duration = 2;
-        float x_offset = sin(uv.y * 20.0 + time) / duration;
-        x_offset *= 0.1;
-        uv.x += x_offset;
-
-        color = camera_texture.sample(colorSampler, uv);
-        float gray = dot(color.rgb, float3(0.299, 0.587, 0.114));
-        color = float4(gray);
-    }
+//    if (color.r == 0.0 && color.g == 0.0 && color.b == 0.0)
+//    {
+//        float2 uv = in.texCoords;
+//        float duration = 2;
+//        float x_offset = sin(uv.y * 20.0 + time) / duration;
+//        x_offset *= 0.1;
+//        uv.x += x_offset;
+//
+//        color = camera_texture.sample(colorSampler, uv);
+//        float gray = dot(color.rgb, float3(0.299, 0.587, 0.114));
+//        color = float4(gray);
+//    }
     
+    float2 uv = in.texCoords;
+//    float2 uv = fragCoord.xy*2. / iResolution.xy-float4(1.);
+    
+    float d=length(uv);
+    float z = sqrt(1.0 - d * d);
+    float r = atan2(d, z) / 3.14159;
+    float phi = atan2(uv.y, uv.x);
+    
+    uv = float2(r*cos(phi)+.5,r*sin(phi)+.5);
+    
+    color = camera_texture.sample(colorSampler, uv);
+//    color = float4(checker(uv),1.);
     return color;
 }
