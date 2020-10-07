@@ -7,19 +7,30 @@
 //
 
 import UIKit
-import RealityKit
+import SceneKit
+import ARKit
+import Metal
+import MetalKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet var arView: ARView!
+class ViewController: UIViewController, ARSCNViewDelegate {
+    @IBOutlet weak var sceneView: ARSCNView!
+    @IBOutlet weak var metalView: MetaOverlayView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        sceneView.delegate = self
+        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        sceneView.scene = SCNScene()
+
+        startRunning()
+    }
+
+    fileprivate func startRunning() {
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = .horizontal
+        configuration.isLightEstimationEnabled = true
         
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
+        sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
     }
 }
