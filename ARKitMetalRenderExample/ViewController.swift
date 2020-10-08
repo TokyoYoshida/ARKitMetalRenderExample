@@ -70,18 +70,29 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        print("\(self.classForCoder)/" + #function)
+//        print("\(self.classForCoder)/" + #function)
         
-        for child in virtualNode.childNodes {
-            if let material = child.geometry?.firstMaterial {
-                material.diffuse.contents = UIColor.black
-            }
+        let sphereNode = SCNNode()
+
+        sphereNode.geometry = SCNSphere(radius: 0.1)
+        sphereNode.position.y += Float(0.05)
+        if let material = sphereNode.geometry?.firstMaterial {
+            material.diffuse.contents = UIColor.black
+            material.lightingModel = .lambert
         }
-        virtualNode.scale = SCNVector3Make(2, 2, 2)
-        
-        DispatchQueue.main.async(execute: {
-            node.addChildNode(self.virtualNode)
-        })
+
+        node.addChildNode(sphereNode)
+
+        //        for child in virtualNode.childNodes {
+//            if let material = child.geometry?.firstMaterial {
+//                material.diffuse.contents = UIColor.black
+//            }
+//        }
+//        virtualNode.scale = SCNVector3Make(2, 2, 2)
+//
+//        DispatchQueue.main.async(execute: {
+//            node.addChildNode(self.virtualNode)
+//        })
     }
 
 }
@@ -89,7 +100,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 extension SCNNode {
     
     func loadDuck() {
-        guard let scene = SCNScene(named: "duck.scn", inDirectory: "models.scnassets/duck") else {fatalError()}
+        guard let scene = SCNScene(named: "sphere.scn", inDirectory: "models.scnassets/duck") else {fatalError()}
         for child in scene.rootNode.childNodes {
             child.geometry?.firstMaterial?.lightingModel = .physicallyBased
             addChildNode(child)
