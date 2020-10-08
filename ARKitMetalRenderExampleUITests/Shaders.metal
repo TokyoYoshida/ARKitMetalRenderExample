@@ -65,6 +65,7 @@ fragment float4 fragmentShader2(ColorInOut       in               [[ stage_in ]]
     constexpr sampler colorSampler;
 
     float4 color = snapshot_texture.sample(colorSampler, in.texCoords);
+    float2 res = float2(camera_texture.get_width(), camera_texture.get_height());
     
 //    if (color.r == 0.0 && color.g == 0.0 && color.b == 0.0)
 //    {
@@ -79,8 +80,8 @@ fragment float4 fragmentShader2(ColorInOut       in               [[ stage_in ]]
 //        color = float4(gray);
 //    }
     
-    float2 uv = in.texCoords;
-//    float2 uv = fragCoord.xy*2. / iResolution.xy-float4(1.);
+//    float2 uv = in.texCoords;
+    float2 uv = in.texCoords.xy*2. - float2(1.);
     
     float d=length(uv);
     float z = sqrt(1.0 - d * d);
