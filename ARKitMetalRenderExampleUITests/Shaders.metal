@@ -83,14 +83,16 @@ fragment float4 fragmentShader2(ColorInOut       in               [[ stage_in ]]
 //    float2 uv = in.texCoords;
     float2 uv = in.texCoords.xy*2. - float2(1.);
     
-    float d=length(uv);
-    float z = sqrt(1.0 - d * d);
-    float r = atan2(d, z) / 3.14159;
-    float phi = atan2(uv.y, uv.x);
-    
-    uv = float2(r*cos(phi)+.5,r*sin(phi)+.5);
-    
-    color = camera_texture.sample(colorSampler, uv);
+    if (color.r == 0.0 && color.g == 0.0 && color.b == 0.0){
+        float d=length(uv);
+        float z = sqrt(1.0 - d * d);
+        float r = atan2(d, z) / 3.14159;
+        float phi = atan2(uv.y, uv.x);
+        
+        uv = float2(r*cos(phi)+.5,r*sin(phi)+.5);
+        
+        color = camera_texture.sample(colorSampler, uv);
+    }
 //    color = float4(checker(uv),1.);
     return color;
 }
