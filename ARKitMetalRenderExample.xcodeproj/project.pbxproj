@@ -16,7 +16,6 @@
 		1ED5F001252DB05B0070538E /* ARKitMetalRenderExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F000252DB05B0070538E /* ARKitMetalRenderExampleTests.swift */; };
 		1ED5F00C252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F00B252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift */; };
 		1ED5F01A252DB1D10070538E /* MetalOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F019252DB1D10070538E /* MetalOverlayView.swift */; };
-		1ED5F01C252DC5E30070538E /* models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5F01B252DC5E30070538E /* models.scnassets */; };
 		1ED5F01E252DC6330070538E /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5F01D252DC6330070538E /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +51,6 @@
 		1ED5F00B252DB05B0070538E /* ARKitMetalRenderExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitMetalRenderExampleUITests.swift; sourceTree = "<group>"; };
 		1ED5F00D252DB05B0070538E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ED5F019252DB1D10070538E /* MetalOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalOverlayView.swift; sourceTree = "<group>"; };
-		1ED5F01B252DC5E30070538E /* models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = models.scnassets; sourceTree = "<group>"; };
 		1ED5F01D252DC6330070538E /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +102,6 @@
 		1ED5EFE8252DB05A0070538E /* ARKitMetalRenderExample */ = {
 			isa = PBXGroup;
 			children = (
-				1ED5F01B252DC5E30070538E /* models.scnassets */,
 				1ED5EFE9252DB05A0070538E /* AppDelegate.swift */,
 				1ED5EFEB252DB05A0070538E /* ViewController.swift */,
 				1ED5F019252DB1D10070538E /* MetalOverlayView.swift */,
@@ -240,7 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED5EFF6252DB05B0070538E /* LaunchScreen.storyboard in Resources */,
-				1ED5F01C252DC5E30070538E /* models.scnassets in Resources */,
 				1ED5EFF3252DB05B0070538E /* Assets.xcassets in Resources */,
 				1ED5EFF1252DB05A0070538E /* Main.storyboard in Resources */,
 			);
