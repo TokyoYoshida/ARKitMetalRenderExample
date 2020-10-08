@@ -70,11 +70,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-//        print("\(self.classForCoder)/" + #function)
-        
+        addBubble(node: node)
+    }
+    
+    func addBubble(node: SCNNode) {
         let sphereNode = SCNNode()
 
-        sphereNode.geometry = SCNSphere(radius: 0.1)
+        sphereNode.geometry = SCNSphere(radius: 0.05)
         sphereNode.position.y += Float(0.05)
         if let material = sphereNode.geometry?.firstMaterial {
             material.diffuse.contents = UIColor.black
@@ -83,40 +85,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
         node.addChildNode(sphereNode)
 
-        //        for child in virtualNode.childNodes {
-//            if let material = child.geometry?.firstMaterial {
-//                material.diffuse.contents = UIColor.black
-//            }
-//        }
-//        virtualNode.scale = SCNVector3Make(2, 2, 2)
-//
-//        DispatchQueue.main.async(execute: {
-//            node.addChildNode(self.virtualNode)
-//        })
+        node.runAction(SCNAction.repeatForever(SCNAction.move(by: SCNVector3(0, 0.1, 0), duration: 5)))
     }
 
-}
-
-extension SCNNode {
-    
-    func loadDuck() {
-        guard let scene = SCNScene(named: "sphere.scn", inDirectory: "models.scnassets/duck") else {fatalError()}
-        for child in scene.rootNode.childNodes {
-            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
-            addChildNode(child)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {return}
+        let touchPos = touch.location(in: sceneView)
+        let hitTest = sceneView.hitTest(touchPos, types: .existingPlaneUsingExtent)
+        if !hitTest.isEmpty {
+            let anchor = ARAnchor(transform: hitTest.first!.worldTransform)
+            sceneView.session.add(anchor: anchor)
         }
     }
 }
-
-class VirtualObjectNode: SCNNode {
-    
-    override init() {
-        super.init()
-        loadDuck()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
